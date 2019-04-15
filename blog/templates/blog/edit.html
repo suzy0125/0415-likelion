@@ -1,0 +1,13 @@
+<head>
+
+</head>
+<body>
+    <h1>글을 수정할라구용?</h1>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        <!-- 보안을 위해 태그해야하는 것 -->
+        {{form.as_p}}
+        <!-- 이게 없으면 글이안보여요 글을 보이게 하는 것입니다.-->
+        <button type="submit" class="brn brn-secondary">저장</button>
+    </form>
+</body>
